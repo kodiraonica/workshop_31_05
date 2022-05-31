@@ -1,0 +1,116 @@
+/*
+https://coolors.co/4e4187-3083dc-f8ffe5-7dde92-2ebfa5
+*/
+:root {
+    --dark-slate-blue: #4e4187ff;
+    --bleu-de-france: #3083dcff;
+    --light-yellow: #f8ffe5ff;
+    --light-green: #7dde92ff;
+    --keppel: #2ebfa5ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body { 
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+nav {
+    background-color: var(--bleu-de-france);
+    padding: 50px;
+}
+
+nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+    color: var(--light-yellow);
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-signup {
+    background-color: var(--dark-slate-blue);
+    padding: 10px 20px;
+    float: right;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+    height: calc(100% - 120px);
+}
+
+aside {
+    min-width: 50%;
+}
+
+section {
+    padding: 50px;
+}
+
+aside:first-child {
+    background-color: var(--light-green);
+}
+
+aside:nth-child(2) {
+    background-color: var(--light-yellow);
+    color:#000;
+}
+
+footer {
+    background-color: #292929;
+    padding: 20px;
+}
+
+.modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 500px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--keppel);
+    display: none;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+.btn-close {
+    background-color: #000;
+    color:white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    float: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+}
